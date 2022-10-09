@@ -1,11 +1,11 @@
 # RSA Factoring Challenge
 ## Case description
-We have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documentsWe have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documents.
+We have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documents.
 
 ### Task 0
 Factorize as many numbers as possible into a product of two smaller numbers.
-- Usage: factors <file>Usage
-	- where <file> is a file containing natural numbers to factor.
+- Usage: factors "file"
+	- where "file" is a file containing natural numbers to factor.
 	- One number per line
 	- You can assume that all lines will be valid natural numbers greater than 1
 	- You can assume that there will be no empy line, and no space before and after the valid number
