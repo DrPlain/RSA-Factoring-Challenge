@@ -20,7 +20,7 @@ def readline(filename):
             line_number += 1
             if line.isnumeric():
                 number = int(line)
-                for factor1 in range(2, number):
+                for factor1 in range(2, number + 1):
                     if number % factor1 == 0:
                         factor2 = number // factor1
                         if isPrime(factor1) and isPrime(factor2):
