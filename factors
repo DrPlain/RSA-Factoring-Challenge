@@ -1,0 +1,46 @@
+#!/usr/bin/python3
+from sys import argv, exit
+
+
+def factor():
+    """Reads a file and factorizes the integer on each line"""
+    if len(argv) != 2:
+        print("Usage: factors <file>")
+        exit(1)
+    readline(argv[1])
+
+
+def readline(filename):
+    """Reads a line and factorizes number given"""
+    line_number = 0
+    with open(filename, "r") as file:
+        lines = file.readlines()
+        for line in lines:
+            line = line.strip()
+            line_number += 1
+            if line.isnumeric():
+                number = int(line)
+                for factor1 in range(2, number):
+                    if number % factor1 == 0:
+                        factor2 = number // factor1
+                        print(f"{number}={factor2}*{factor1}")
+                        break
+            else:
+                exit(1)
+
+
+def isPrime(num):
+    """Checks if a given number is a prime number"""
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+
+def main():
+    """Driver function for our program"""
+    factor()
+
+
+if __name__ == "__main__":
+    main()
